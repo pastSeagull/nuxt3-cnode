@@ -4,6 +4,9 @@
 
 <template>
     <div>
-        sidebar
+        <Right-Login />
+        <Right-Noone class="mt-6" />
+        <Right-Ranking class="mt-6" />
+        <Right-Community class="mt-6" />
     </div>
 </template>

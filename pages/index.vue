@@ -13,9 +13,9 @@ const tab = route.query.tab
 
 
 <template>
-    <div class="flex">
-        <Item class="p-5 flex-2" />
-        <Sidebar class="flex-1" />
+    <div class="flex p-5 w-11/12 m-auto">
+        <Item class="flex-1 mr-5" />
+        <Sidebar class="w-72" />
         <!-- <NuxtLink to="/about">
             About page
         </NuxtLink>

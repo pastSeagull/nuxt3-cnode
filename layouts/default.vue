@@ -19,7 +19,7 @@ const navbarList = {
                     <input type="text" class="rounded-2xl outline-none w-56" />
                 </NuxtLink>
                 <div class="text-white">
-                    <NuxtLink class="mr-9 text-white" v-for="(list, key) in navbarList" :key="key">
+                    <NuxtLink class="hover:text-white mr-9 text-gray-300 cursor-pointer" v-for="(list, key) in navbarList" :key="key">
                         {{ list.title }}
                     </NuxtLink>
                 </div>
@@ -33,10 +33,11 @@ const navbarList = {
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     font-size: 15px;
-    background-color: lighten(#eceef1, 30%);
+    /* background-color: lighten(#eceef1, 30%); */
+    background: #e1e1e1;
     margin: 0;
     padding: 0;
-    color: #2E495E;
+    /* color: #2E495E; */
     overflow-y: scroll;
 }
 
