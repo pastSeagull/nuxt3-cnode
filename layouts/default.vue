@@ -33,11 +33,9 @@ const navbarList = {
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     font-size: 15px;
-    /* background-color: lighten(#eceef1, 30%); */
     background: #e1e1e1;
     margin: 0;
     padding: 0;
-    /* color: #2E495E; */
     overflow-y: scroll;
 }
 
