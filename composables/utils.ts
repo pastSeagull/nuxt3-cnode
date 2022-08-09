@@ -1,3 +1,30 @@
+import { ref } from 'vue'
+
+export const useAsync = () => {
+    const loading = ref(false)
+    const data = ref(null)
+    const error = ref(null)
+    const request = (promise) => {
+        if (!promise || !promise.then) {
+            throw new Error("请传入promise")
+        }
+        loading.value = true
+        return promise.then(res => {
+            data.value = res.data
+        }).catch(e => {
+            error.value = e
+        }).finally(() => {
+            loading.value = false
+        })
+    }
+    return {
+        loading,
+        error,
+        data,
+        request
+    }
+}
+
 export const capitalize = (str: any) => {
     let date = new Date(str)
     let time = new Date().getTime() - date.getTime()
